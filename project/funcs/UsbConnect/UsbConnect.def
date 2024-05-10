@@ -1,0 +1,9 @@
+LIBRARY UsbConnect
+EXPORTS
+UsbConnectInitialize
+UsbConnectInitializeWithHandlers
+UsbConnectTerminate
+UsbConnectPrintStackTrace
+mlxConnectVisa
+mlxDisconnectVisa
+

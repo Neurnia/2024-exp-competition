@@ -1,0 +1,12 @@
+{
+    "cmake.sourceDirectory": "D:/Fun/Repositories/2024 exp competition/project",
+    "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+    "files.associations": {
+        "*.m": "matlab",
+        "qapplication": "cpp",
+        "qtablewidget": "cpp",
+        "qlineseries": "cpp",
+        "qvboxlayout": "cpp",
+        "qpushbutton": "cpp"
+    }
+}

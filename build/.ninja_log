@@ -1,0 +1,19 @@
+# ninja log v5
+16	341	7370515774668009	UltrasonicExperiment_autogen/timestamp	f53540505cb18fbe
+16	341	7370515774668009	D:/Fun/Repositories/2024 exp competition/build/UltrasonicExperiment_autogen/timestamp	f53540505cb18fbe
+16	341	7370515774668009	UltrasonicExperiment_autogen/mocs_compilation.cpp	f53540505cb18fbe
+16	341	7370515774668009	D:/Fun/Repositories/2024 exp competition/build/UltrasonicExperiment_autogen/mocs_compilation.cpp	f53540505cb18fbe
+358	1899	7370499543175551	CMakeFiles/UltrasonicExperiment.dir/src/ParaGroupBox.cpp.obj	b8fdc098c549327f
+297	1584	7370369049251417	CMakeFiles/UltrasonicExperiment.dir/src/main.cpp.obj	c416de140c3bfcfa
+294	1610	7370369049481832	CMakeFiles/UltrasonicExperiment.dir/UltrasonicExperiment_autogen/mocs_compilation.cpp.obj	a60d5b88b37e5daa
+131	1511	7368889978985621	CMakeFiles/UltrasonicExperiment.dir/src/MainWindow.cpp.obj	70f37a5bb227470d
+1511	1651	7368889980104222	UltrasonicExperiment.exe	670857894261cca6
+12	274	7370517503686080	UltrasonicExperiment_autogen/timestamp	f53540505cb18fbe
+12	274	7370517503686080	UltrasonicExperiment_autogen/mocs_compilation.cpp	f53540505cb18fbe
+12	274	7370517503686080	D:/Fun/Repositories/2024 exp competition/build/UltrasonicExperiment_autogen/timestamp	f53540505cb18fbe
+12	274	7370517503686080	D:/Fun/Repositories/2024 exp competition/build/UltrasonicExperiment_autogen/mocs_compilation.cpp	f53540505cb18fbe
+283	1562	7370517516940232	CMakeFiles/UltrasonicExperiment.dir/src/ParaGroupBox.cpp.obj	f9408c5988a93589
+277	1570	7370517517010039	CMakeFiles/UltrasonicExperiment.dir/src/main.cpp.obj	cd0a287755f595a5
+274	1578	7370517517111431	CMakeFiles/UltrasonicExperiment.dir/UltrasonicExperiment_autogen/mocs_compilation.cpp.obj	9eed7c52c3bbfad6
+280	1585	7370517517153970	CMakeFiles/UltrasonicExperiment.dir/src/MainWindow.cpp.obj	70f37a5bb227470d
+1585	1804	7370517518957542	UltrasonicExperiment.exe	670857894261cca6
