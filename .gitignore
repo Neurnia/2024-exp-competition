@@ -1,4 +1,16 @@
+# others
 project/funcs/UsbConnect/v2/
 .vscode/
 第二次汇报.md
 第二次汇报.pdf
+
+# cmake
+build/CMakeCache.txt
+build/CMakeFiles
+build/.cmake
+build/.qt
+build/cmake_install.cmake
+build/install_manifest.txt
+build/compile_commands.json
+build/.ninja_deps
+build/.ninja_log
