@@ -42,7 +42,7 @@ target_link_libraries(${PROJECT_NAME}
         Qt6::Widgets
         Qt6::Charts
         UsbConnect
-        mclmcrrt)  # Assuming the library name is UsbConnect
+        mclmcrrt)
 
 # Make sure to copy the UsbConnect.dll to your project's binary directory
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
