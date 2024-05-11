@@ -1,5 +1,0 @@
-D:/Fun/Repositories/2024 exp competition/build/CMakeFiles/UltrasonicExperiment.dir
-D:/Fun/Repositories/2024 exp competition/build/CMakeFiles/edit_cache.dir
-D:/Fun/Repositories/2024 exp competition/build/CMakeFiles/rebuild_cache.dir
-D:/Fun/Repositories/2024 exp competition/build/CMakeFiles/UltrasonicExperiment_autogen_timestamp_deps.dir
-D:/Fun/Repositories/2024 exp competition/build/CMakeFiles/UltrasonicExperiment_autogen.dir
