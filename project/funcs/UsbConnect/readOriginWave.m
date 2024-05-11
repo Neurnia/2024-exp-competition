@@ -23,5 +23,3 @@ function [dataBuffer, deviceID] = readOriginWave(numberOfPoints)
     
     return;  % 返回数据和设备ID或错误信息
 end
-
-% test
