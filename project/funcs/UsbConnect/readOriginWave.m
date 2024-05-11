@@ -5,7 +5,7 @@ function [dataBuffer, deviceID] = readOriginWave(numberOfPoints)
     % 检查visaObj是否已经初始化和有效
     if isempty(visaObj) || ~isvalid(visaObj)
         deviceID = "请先点击连接示波器。";
-        return;  % 如果设备没有连接或无效，则返回错误信息
+        return;
     end
 
     % 检查设备是否已经连接
@@ -18,7 +18,7 @@ function [dataBuffer, deviceID] = readOriginWave(numberOfPoints)
         flushinput(visaObj);                       % 清除输入缓冲区
         deviceID = string(writeread(visaObj, '*IDN?'));       % 返回成功读取数据的信息
     else
-        deviceID = "请先点击连接示波器。";     % 设备未连接
+        deviceID = "请先点击连接示波器。";
     end
     
     return;  % 返回数据和设备ID或错误信息
