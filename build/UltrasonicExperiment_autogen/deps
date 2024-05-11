@@ -33,6 +33,13 @@ UltrasonicExperiment_autogen/timestamp: \
 	C:/Program\ Files/CMake/share/cmake-3.29/Modules/Platform/Windows-MSVC.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.29/Modules/Platform/Windows.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake \
+	C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mat.h \
+	C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/matrix.h \
+	C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mclbase.h \
+	C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mclcppclass.h \
+	C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mclmcr.h \
+	C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mclmcrrt.h \
+	C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/tmwtypes.h \
 	C:/Qt/6.5.3/msvc2019_64/include/QtCharts/QAbstractAxis \
 	C:/Qt/6.5.3/msvc2019_64/include/QtCharts/QAbstractSeries \
 	C:/Qt/6.5.3/msvc2019_64/include/QtCharts/QChart \
@@ -484,6 +491,7 @@ UltrasonicExperiment_autogen/timestamp: \
 	D:/Fun/Repositories/2024\ exp\ competition/project/CMakeLists.txt \
 	D:/Fun/Repositories/2024\ exp\ competition/project/include/MainWindow.h \
 	D:/Fun/Repositories/2024\ exp\ competition/project/include/ParaGroupBox.h \
+	D:/Fun/Repositories/2024\ exp\ competition/project/include/UsbConnect.h \
 	D:/Fun/Repositories/2024\ exp\ competition/project/src/MainWindow.cpp \
 	D:/Fun/Repositories/2024\ exp\ competition/project/src/ParaGroupBox.cpp \
 	D:/Fun/Repositories/2024\ exp\ competition/project/src/main.cpp \

@@ -1,6 +1,6 @@
 //
 // MATLAB Compiler: 23.2 (R2023b)
-// Date: Fri May 10 21:12:03 2024
+// Date: Sat May 11 01:09:11 2024
 // Arguments:
 // "-B""macro_default""-W""cpplib:UsbConnect""-T""link:lib""connectVisa.m""disco
 // nnectVisa.m"
@@ -84,7 +84,7 @@ bool MW_CALL_CONV mlxDisconnectVisa(int nlhs, mxArray *plhs[], int nrhs, mxArray
 
 #endif
 
-extern LIB_UsbConnect_CPP_API void MW_CALL_CONV connectVisa(int nargout, mwArray& isConnected);
+extern LIB_UsbConnect_CPP_API void MW_CALL_CONV connectVisa(int nargout, mwArray& isConnected, mwArray& deviceID);
 
 extern LIB_UsbConnect_CPP_API void MW_CALL_CONV disconnectVisa(int nargout, mwArray& isConnected);
 

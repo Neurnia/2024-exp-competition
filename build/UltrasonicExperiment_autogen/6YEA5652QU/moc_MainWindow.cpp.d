@@ -1,4 +1,11 @@
 D:/Fun/Repositories/2024\ exp\ competition/build/UltrasonicExperiment_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Fun/Repositories/2024\ exp\ competition/project/include/MainWindow.h \
+  C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mat.h \
+  C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/matrix.h \
+  C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mclbase.h \
+  C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mclcppclass.h \
+  C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mclmcr.h \
+  C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/mclmcrrt.h \
+  C:/Program\ Files/MATLAB/MATLAB\ Runtime/R2023b/extern/include/tmwtypes.h \
   C:/Qt/6.5.3/msvc2019_64/include/QtCharts/QAbstractAxis \
   C:/Qt/6.5.3/msvc2019_64/include/QtCharts/QAbstractSeries \
   C:/Qt/6.5.3/msvc2019_64/include/QtCharts/QChart \
@@ -225,4 +232,5 @@ D:/Fun/Repositories/2024\ exp\ competition/build/UltrasonicExperiment_autogen/6Y
   C:/Qt/6.5.3/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.5.3/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.5.3/msvc2019_64/include/QtWidgets/qwidget.h \
-  D:/Fun/Repositories/2024\ exp\ competition/project/include/ParaGroupBox.h
+  D:/Fun/Repositories/2024\ exp\ competition/project/include/ParaGroupBox.h \
+  D:/Fun/Repositories/2024\ exp\ competition/project/include/UsbConnect.h

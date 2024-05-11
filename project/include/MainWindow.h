@@ -11,6 +11,8 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QComboBox>
+#include <QPushButton>
+#include "UsbConnect.h"
 
 class MainWindow : public QMainWindow
 {
@@ -25,10 +27,13 @@ private:
     ParaGroupBox *paraGroupBox;
     QVBoxLayout *rightLayout;
     QComboBox *modeSelectBox;
+    QPushButton *connectionButton;
 
     QChart *chart;
     QLineSeries *series;
     QChartView *chartView;
+
+    void toggleConnection();
 };
 
 #endif // MAINWINDOW_H

@@ -4,6 +4,9 @@
 #include <QStatusBar>
 #include <QPushButton>
 #include <QComboBox>
+#include <QMessageBox>
+#include "mclmcrrt.h"
+#include "mclcppclass.h"
 
 MainWindow::MainWindow(QWidget *parent) 
     : QMainWindow(parent),
@@ -11,18 +14,26 @@ MainWindow::MainWindow(QWidget *parent)
       paraGroupBox(new ParaGroupBox),
       rightLayout(new QVBoxLayout),
       modeSelectBox(new QComboBox),
+      connectionButton(new QPushButton("连接示波器")),
 
       chart(new QChart),
       series(new QLineSeries),
       chartView(new QChartView(chart, this))
 {
+    // 初始化 MATLAB Runtime
+    if (!mclInitializeApplication(nullptr, 0)) {
+        QMessageBox::critical(this, "初始化失败", "无法初始化MATLAB Runtime。");
+        exit(1); // 或其他错误处理
+    }
+
+    if (!UsbConnectInitialize()) {
+        QMessageBox::critical(this, "初始化失败", "无法初始化 UsbConnect 库。");
+        exit(1); // 或其他错误处理
+    }
+
     // 将系列添加到图表中
     chart->addSeries(series);
-
-    // 设置图表标题
     chart->setTitle("波形图");
-
-    // 创建默认的坐标轴
     chart->createDefaultAxes();
 
     // 配置 X 和 Y 轴
@@ -48,6 +59,9 @@ MainWindow::MainWindow(QWidget *parent)
     modeSelectBox->addItem("包络");
     modeSelectBox->setCurrentIndex(0);
 
+    connect(connectionButton, &QPushButton::clicked, this, &MainWindow::toggleConnection);
+
+    rightLayout->addWidget(connectionButton);
     rightLayout->addWidget(chartView);
     rightLayout->addWidget(modeSelectBox);
 
@@ -65,11 +79,40 @@ MainWindow::MainWindow(QWidget *parent)
     exitAction->setShortcut(QKeySequence::Quit);
 
     // 设置状态栏信息
-    statusBar()->showMessage(tr("Ready"));
+    statusBar()->showMessage("未连接到示波器");
 }
 
-MainWindow::~MainWindow()
-{
-    // 清理资源
+MainWindow::~MainWindow() {
+    UsbConnectTerminate();
+    mclTerminateApplication();
+
     delete chartView;
+}
+
+void MainWindow::toggleConnection() {
+    try {
+        mwArray isConnected, deviceID;
+        if (connectionButton->text() == "连接示波器") {
+            connectVisa(2, isConnected, deviceID);
+            std::vector<mwUString> s = deviceID.GetStringData();
+            mwUString &deviceIDString = s[0];
+            if (isConnected) {
+                connectionButton->setText("断开示波器");
+                statusBar()->showMessage("已连接到示波器：" + QString::fromUtf16(deviceIDString.c_str()));
+            } else {
+                throw std::runtime_error(QString::fromUtf16(deviceIDString.c_str()).toUtf8().constData());
+            }
+        } else {
+            disconnectVisa(1, isConnected);
+            if (!isConnected) {
+                connectionButton->setText("连接示波器");
+                statusBar()->showMessage("已断开示波器");
+            } else {
+                throw std::runtime_error("断开示波器失败。");
+            }
+        }
+    } catch (const std::exception& e) {
+        QMessageBox::critical(this, "连接错误", QString::fromStdString(e.what()));
+        statusBar()->showMessage(QString::fromStdString(e.what()));
+    }
 }
